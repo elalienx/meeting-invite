@@ -6,7 +6,10 @@
     />
     <mj-attributes>
       // Global
-      <mj-all color="#FFFFFF" font-family="Montserrat" />
+      <mj-all
+        color="#FFFFFF"
+        font-family="Montserrat, Helvetica, Verdana, sans-serif"
+      />
 
       // Text
       <mj-class
@@ -33,6 +36,11 @@
       <mj-class name="data-row" border="1px solid #D1A19D" />
       <mj-class name="data-row-social" padding="8px" align="left" />
     </mj-attributes>
+
+    // Link
+    <mj-style inline="inline">
+      .link { color: #D1A19D; text-decoration: underline;}
+    </mj-style>
   </mj-head>
   <mj-body background-color="#FFFFFF">
     <mj-hero>
@@ -59,7 +67,7 @@
           <mj-social-element
             src="https://novare-tech-education.web.app/files/email-invite-template/icon-user.png"
           >
-            Sudipta Gupta
+            CANDIDATE: Sudipta Gupta
           </mj-social-element>
         </mj-social>
       </mj-column>
@@ -71,7 +79,8 @@
           <mj-social-element
             src="https://novare-tech-education.web.app/files/email-invite-template/icon-boss.png"
           >
-            Lanna Haddad
+            INTERVIEWER: Lanna Haddad, Senior talent adquisition specialist,
+            Eduardo Alvarez Tech Education Lead.
           </mj-social-element>
         </mj-social>
       </mj-column>
@@ -83,7 +92,7 @@
           <mj-social-element
             src="https://novare-tech-education.web.app/files/email-invite-template/icon-calendar.png"
           >
-            Monday Jan 1, 2024 at 09:00 (30 mins)
+            DATE: Monday Jan 1, 2024 at 09:00 (30 mins)
           </mj-social-element>
         </mj-social>
       </mj-column>
@@ -95,9 +104,16 @@
           <mj-social-element
             src="https://novare-tech-education.web.app/files/email-invite-template/icon-video.png"
           >
-            Microsoft Teams link
+            MEETING LINK:
           </mj-social-element>
         </mj-social>
+        <mj-text padding-top="0">
+          <a
+            class="link"
+            hreft="https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGEwMzdiM2QtZjVkNy00ZDIzLWIwYWUtYTJkNjNmOWM3ZjEx%40thread.v2/0?context=%7b%22Tid%22%3a%2212a5b69e-d6a7-4ba9-8d3a-f8aaa8a6e8d8%22%2c%22Oid%22%3a%227bba7782-244e-435c-a014-863cf29632a6%22%7d"
+            >https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGEwMzdiM2QtZjVkNy00ZDIzLWIwYWUtYTJkNjNmOWM3ZjEx%40thread.v2/0?context=%7b%22Tid%22%3a%2212a5b69e-d6a7-4ba9-8d3a-f8aaa8a6e8d8%22%2c%22Oid%22%3a%227bba7782-244e-435c-a014-863cf29632a6%22%7d</a
+          >
+        </mj-text>
       </mj-column>
     </mj-section>
 
