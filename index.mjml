@@ -1,6 +1,41 @@
 <mjml>
+  <mj-head>
+    <mj-font
+      name="Montserrat"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <mj-attributes>
+      // Global
+      <mj-all color="#FFFFFF" font-family="Montserrat" />
+
+      // Text
+      <mj-class
+        name="title"
+        padding-bottom="0"
+        font-size="24px"
+        font-weight="700"
+      />
+      <mj-class
+        name="sub-title"
+        padding-bottom="0"
+        font-size="15px"
+        text-transform="uppercase"
+      />
+      <mj-class name="small" font-size="10px" />
+      <mj-class name="no-padding" padding-top="0" padding-bottom="8px" />
+
+      // Colors
+      <mj-class name="background-purple" background-color="#331E35" />
+      <mj-class name="color-salmon" color="#D1A19D" />
+
+      // Components
+      <mj-class name="data-row-parent" padding="8px 24px" />
+      <mj-class name="data-row" border="1px solid #D1A19D" />
+      <mj-class name="data-row-social" padding="8px" align="left" />
+    </mj-attributes>
+  </mj-head>
   <mj-body background-color="#FFFFFF">
-    <mj-hero background-color="#331E35">
+    <mj-hero>
       <mj-image
         padding="0"
         src="https://novare-tech-education.web.app/files/email-invite-template/header.png"
@@ -8,85 +43,72 @@
       </mj-image>
     </mj-hero>
 
-    <mj-section background-color="#331E35">
+    <mj-section mj-class="background-purple">
       <mj-column>
-        <mj-text
-          color="#FFF"
-          font-size="24px"
-          padding-bottom="0"
-          font-family="Helvetica"
-          >Interview</mj-text
-        >
-        <mj-text
-          color="#FFF"
-          font-size="24px"
-          padding-bottom="0"
-          font-family="Helvetica"
-          >Confirmation</mj-text
-        >
-        <mj-text color="#D1A19D" padding-bottom="0" font-family="Helvetica"
+        <mj-text mj-class="title">Interview</mj-text>
+        <mj-text mj-class="title">Confirmation</mj-text>
+        <mj-text mj-class="sub-title color-salmon" padding-bottom="0"
           >Pega Developer at Folksam</mj-text
         >
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#331E35" padding="8px 24px">
-      <mj-column
-        background-color="#331E35"
-        padding="8px"
-        border="1px solid #D1A19D"
-      >
-        <mj-text color="#FFF" font-family="Helvetica">Sudipta Gupta</mj-text>
+    <mj-section mj-class="background-purple data-row-parent">
+      <mj-column mj-class="data-row">
+        <mj-social mj-class="data-row-social">
+          <mj-social-element
+            src="https://novare-tech-education.web.app/files/email-invite-template/icon-user.png"
+          >
+            Sudipta Gupta
+          </mj-social-element>
+        </mj-social>
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#331E35" padding="8px 24px">
-      <mj-column
-        background-color="#331E35"
-        padding="8px"
-        border="1px solid #D1A19D"
-      >
-        <mj-text color="#FFF" font-family="Helvetica">Lanna Haddad</mj-text>
+    <mj-section mj-class="background-purple data-row-parent">
+      <mj-column mj-class="data-row">
+        <mj-social mj-class="data-row-social">
+          <mj-social-element
+            src="https://novare-tech-education.web.app/files/email-invite-template/icon-boss.png"
+          >
+            Lanna Haddad
+          </mj-social-element>
+        </mj-social>
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#331E35" padding="8px 24px">
-      <mj-column
-        background-color="#331E35"
-        padding="8px"
-        border="1px solid #D1A19D"
-      >
-        <mj-text color="#FFF" font-family="Helvetica"
-          >Monday Jan 1, 2024 at 09:00 (30 mins)</mj-text
-        >
+    <mj-section mj-class="background-purple data-row-parent">
+      <mj-column mj-class="data-row">
+        <mj-social mj-class="data-row-social">
+          <mj-social-element
+            src="https://novare-tech-education.web.app/files/email-invite-template/icon-calendar.png"
+          >
+            Monday Jan 1, 2024 at 09:00 (30 mins)
+          </mj-social-element>
+        </mj-social>
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#331E35" padding="8px 24px">
-      <mj-column
-        background-color="#331E35"
-        padding="8px"
-        border="1px solid #D1A19D"
-      >
-        <mj-text color="#FFF" font-family="Helvetica"
-          >Microsoft Teams link</mj-text
-        >
+    <mj-section mj-class="background-purple data-row-parent">
+      <mj-column mj-class="data-row">
+        <mj-social mj-class="data-row-social">
+          <mj-social-element
+            src="https://novare-tech-education.web.app/files/email-invite-template/icon-video.png"
+          >
+            Microsoft Teams link
+          </mj-social-element>
+        </mj-social>
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#331E35">
+    <mj-section mj-class="background-purple">
       <mj-column>
-        <mj-text color="#FFFFFF" font-family="Helvetica">Lanna Haddad</mj-text>
-        <mj-text
-          color="#FFFFFF"
-          font-family="Helvetica"
-          text-transform="uppercase"
+        <mj-text mj-class="no-padding">Lanna Haddad</mj-text>
+        <mj-text mj-class="no-padding" text-transform="uppercase"
           >Senior Talent Acquisition</mj-text
         >
-        <mj-text color="#FFFFFF" font-family="Helvetica" font-size="10px"
-          >+46 (0) 708 69 69 88</mj-text
-        >
-        <mj-text color="#D1A19D" font-family="Helvetica" font-size="10px"
+        <mj-text mj-class="small no-padding">+46 (0) 708 69 69 88</mj-text>
+        <mj-text mj-class="small no-padding color-salmon"
           >lana.haddad@novarepotential.se</mj-text
         >
       </mj-column>
